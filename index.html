@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TriKardia Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <!-- AOS library for animation -->
+   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark  fixed-top">
+  <div class="container-fluid">
+    <!-- Brand/Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img  class="logo-design" src="images/logos.png" alt="">
+    </a>
+
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+
+     
+
+         
+
+        <!-- Home Dropdown -->
+        <li class="nav-item dropdown drop">
+          <a class="nav-link dropdown-toggle" href="#" id="homeDropdown" role="button" 
+            aria-expanded="false">Home</a>
+          <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+            <li><a class="dropdown-item" href="index.html">Home 1</a></li>
+           
+          </ul>
+        </li>
+
+        <!-- Products Dropdown -->
+        <li class="nav-item dropdown drop">
+          <a class="nav-link dropdown-toggle" href="#product" id="productsDropdown"  role="button"
+            aria-expanded="false">Products</a>
+          <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+            <li><a class="dropdown-item" href="#product">Product 1</a></li>
+
+            <li><a class="dropdown-item" href="#">Product 2</a></li>
+          </ul>
+        </li>
+
+        <!-- FAQ Dropdown -->
+        <li class="nav-item dropdown drop">
+          <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
+            aria-expanded="false">FAQ</a>
+          <ul class="dropdown-menu" aria-labelledby="faqDropdown">
+            <li><a class="dropdown-item" href="#faq">Patients queries</a></li>
+            <li><a class="dropdown-item" href="#patient-satisfaction">Patient satisfaction</a></li>
+          </ul>
+        </li>
+
+
+
+
+
+        <!-- contact-->
+       <li class="nav-item drop">
+         
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+        <!-- profile icon -->
+        <li class="nav-item">
+         
+          <a class="nav-link" href="#"><i class="bi bi-person icon-size"></i></a>
+        </li>
+
+        <!-- Shopping icon -->
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="bi bi-cart3 icon-size"></i></a>
+        </li>
+
+           <!-- search -->
+            
+         
+      <div class="btn-colors">
+      <button class="search-btn " onclick="toggleSearch()"><i class="bi bi-search"></i></button>
+      <span class="search-box" id="searchBox">
+        <input type="text" placeholder="Search here...">
+      </span>
+    </div>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- banner section using crausal -->
+
+<!-- Banner Section using Bootstrap Carousel -->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/img1.jpg" class="d-block w-100 img-fluid" alt="Slide 1" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/img2.jpg" class="d-block w-100 img-fluid" alt="Slide 2" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/img3.jpg" class="d-block w-100 img-fluid" alt="Slide 3" style="height: 500px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- product section -->
+ <section class="py-5 bg-light" id="product">
+  <div class="container">
+    <h2 class="text-center mb-2">Our Products</h2>
+    <h3 class="text-center mb-5">Your Health, Our Priority – Shop Now</h3>
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 transition">
+<div class="img-box">
+          <img src="images/product1.jpg" class="card-img-top new-card-height" alt="Product 1" >
+
+</div>
+          <div class="card-body">
+            <h5 class="card-title">Smart Heart Monitor</h5>
+            <p class="card-text">Real-time ECG monitoring with Bluetooth sync</p>
+            <p class="fw-bold">$129.99</p>
+            <a href="#" class="btn btn-color color-change" >Buy Now <i class="bi bi-arrow-right arrow-icon" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product 2 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 transition">
+          <img src="images/product2.jpg" class="card-img-top new-card-height" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Digital Blood Pressure Kit</h5>
+            <p class="card-text">Portable and accurate with USB-C charging and display.</p>
+            <p class="fw-bold">	$89.00</p>
+            <a href="#" class="btn color-change">Buy Now<i class="bi bi-arrow-right arrow-icon" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product 3 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 transition">
+          <img src="images/product3.jpg" class="card-img-top new-card-height" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Fitness Tracker Band</h5>
+            <p class="card-text">Tracks steps, heart rate, and sleep – waterproof</p>
+            <p class="fw-bold">$49.99</p>
+            <a href="#" class="btn color-change">Buy Now<i class="bi bi-arrow-right arrow-icon" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product 4 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 transition">
+          <img src="images/product4.jpg" class="card-img-top new-card-height" alt="Product 4">
+          <div class="card-body">
+            <h5 class="card-title">Wireless Thermometer</h5>
+            <p class="card-text">Touch-free and instant read with mobile app connectivity</p>
+            <p class="fw-bold">$39.00</p>
+            <a href="#" class="btn color-change">Buy Now<i class="bi bi-arrow-right arrow-icon" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product 5 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 transition">
+          <img src="images/product5.jpg" class="card-img-top new-card-height" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">AI-Powered Health Assistant</h5>
+            <p class="card-text">Virtual health consultant with symptom tracking</p>
+            <p class="fw-bold">$199.99</p>
+            <a href="#" class="btn color-change">Buy Now<i class="bi bi-arrow-right arrow-icon" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product 6 -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card h-100 transition">
+          <img src="images/product6.jpg" class="card-img-top new-card-height" alt="Product 1">
+          <div class="card-body">
+            <h5 class="card-title">Smart Pill Organizer</h5>
+            <p class="card-text">Sends reminders and tracks medication adherence</p>
+            <p class="fw-bold">$49.50</p>
+            <a href="#" class="btn color-change">Buy Now<i class="bi bi-arrow-right arrow-icon" style="margin-left: 5px;"></i></a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat similar blocks for more products -->
+    </div>
+  </div>
+</section>
+
+<!-- faq section -->
+<section class="py-5 bg-light" id="faq">
+  <div class="container-fluid px-3">
+    <h2 class="text-center mb-5" data-aos="fade-roght" data-aos-duration="300" data-aos-delay="300">Patient Frequently Asked Questions</h2>
+    <div class="row align-items-center flex-column flex-md-row">
+
+      <!-- FAQ Accordion -->
+      <div class="col-12 col-lg-6 text-start mb-4 faq-container ">
+        <div class="accordion transition-content" id="hospitalFaq"
+                
+                data-aos="fade-right" 
+                data-aos-duration="800" 
+                data-aos-delay="400">
+
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="faqOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                <i class="bi bi-clock-history me-3" style="font-size: 1.5rem;"></i>
+                What are the hospital visiting hours?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#hospitalFaq">
+              <div class="accordion-body">
+                Visiting hours are from 9 AM to 8 PM daily.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="faqTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                <i class="bi bi-calendar-check me-3" style="font-size: 1.5rem;"></i>
+                How can I book an appointment?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#hospitalFaq">
+              <div class="accordion-body">
+                You can book appointments online through our website or by calling our reception desk.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="faqThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                <i class="bi bi-shield-check me-3" style="font-size: 1.5rem;"></i>
+                Do you accept health insurance?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#hospitalFaq">
+              <div class="accordion-body">
+                Yes, we accept all major insurance providers. Please bring your insurance card during your visit.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item mb-3">
+            <h2 class="accordion-header" id="faqFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                <i class="bi bi-hospital me-3" style="font-size: 1.5rem;"></i>
+                What services does the hospital offer?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#hospitalFaq">
+              <div class="accordion-body">
+                We provide emergency care, surgeries, diagnostics, maternity services, outpatient clinics, and more.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Side Image -->
+       
+      <div class="col-12 col-lg-6 text-center">
+         <img src="images/faq.jpg" 
+     alt="Hospital services" 
+     class="img-fluid rounded shadow" 
+     data-aos="fade-right" 
+     data-aos-duration="1000" 
+     data-aos-delay="300">
+       
+      </div>
+    </div>
+  </div>
+
+  <!-- patient satisfaction rate -->
+  <div class="py-5 bg-white" id="patient-satisfaction">
+    <div class="container-fluid px-3">
+      <div class="row align-items-center flex-column-reverse flex-md-row">
+
+        <!-- Image -->
+        <div class="col-12 col-lg-6 text-center mt-4 mt-md-0">
+          <!-- <img src="images/patient.jpg" alt="Happy Patient" class="img-fluid rounded shadow w-100"> -->
+          
+          <img src="images/patient.jpg" 
+     alt="Doctor FAQ" 
+     class="img-fluid rounded shadow" 
+     data-aos="fade-right" 
+     data-aos-duration="1000" 
+     data-aos-delay="300">
+
+        </div>
+
+        <!-- Text and Stats -->
+        <div class="col-12 col-lg-6 mb-4 mb-md-0 transition-content"
+                data-aos="fade-right" 
+                data-aos-duration="800" 
+                data-aos-delay="400">
+          <h2 class="mb-3 text-center text-md-start">Our Patient Satisfaction Rate</h2>
+          <p class="mb-4 text-center text-md-start">
+            We are committed to providing quality healthcare services with compassion. Our surveys show that our patients are extremely satisfied with our services and care.
+          </p>
+
+          <!-- Satisfaction Progress -->
+          <div class="mb-3">
+            <h5>Overall Satisfaction</h5>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 94%;" aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">94%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h5>Cleanliness & Hygiene</h5>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 91%;" aria-valuenow="91" aria-valuemin="0" aria-valuemax="100">91%</div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <h5>Staff Behavior</h5>
+            <div class="progress">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 96%;" aria-valuenow="96" aria-valuemin="0" aria-valuemax="100">96%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- contact section -->
+
+<!-- Contact Section -->
+<section class="py-5 bg-light" id="contact">
+  <div class="container">
+    <h2 class="text-center mb-3">Contact Our Hospital</h2>
+    <p class="text-center mb-5">We’re here to help you. Reach out to us for appointments, queries, or emergencies.</p>
+
+    <div class="row g-4">
+      <!-- Contact Form -->
+      <div class="col-12 col-lg-6 ">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Your Name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Booking Inquiry" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Describe your concern..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn color-button w-50 ">Send Message
+            <div class="wave"></div>
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-12 col-lg-6">
+        <div class="bg-white p-4 rounded shadow-sm h-100 bordercolor">
+          <h5 class="mb-3"><i class="bi bi-geo-alt-fill text-danger me-2 "></i>Our Address</h5>
+          <div class="mt-4">
+  <iframe src="https://maps.google.com/maps?q=karachi%20hospital&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          width="100%" height="100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+
+
+          <h5 class="mt-4 mb-3"><i class="bi bi-telephone-fill text-success me-2"></i>Phone</h5>
+          <p>+92 321 1234567 (24/7 Emergency)</p>
+
+          <h5 class="mt-4 mb-3"><i class="bi bi-envelope-fill text-primary me-2 "></i>Email</h5>
+          <p>contact@gmail.com</p>
+
+          <h5 class="mt-4 mb-2"><i class="bi bi-clock-fill text-warning me-2 "></i>Visiting Hours</h5>
+          <p>Mon - Sun: 9:00 AM – 8:00 PM</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ <div class="row mt-4">
+  <div class="col-12 text-right">
+    <img src="images/Ambulance.png" alt="Ambulance" class="ambulance-img">
+  </div>
+</div>
+
+<!-- footer  -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+      <!-- Column 1: Logo and Contact -->
+      <div>
+        <div class="logo">
+          <img src="images/logos.png" width="40" style="vertical-align: middle;" />
+          <span style="vertical-align: middle;">Trikardia</span>
+        </div>
+        <p class="desc">
+          Medova is a convenience service for adaptability. Spacious modern villa living room with centrally placed swimming pool blending indoor and outdoor.
+        </p>
+        <div class="contact">
+          <p><i class="fas fa-phone"></i> +00 (123) 456 789 012</p>
+          <p><i class="fas fa-envelope"></i> trikardia@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> West 2nd lane, Inner circular road.</p>
+        </div>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+        <li href="#"><i class="bi bi-plus"></i>Home</li>
+          <li href="#product"><i class="bi bi-plus"></i>Product</li>
+          <li><i class="bi bi-plus"></i>FAQ</li>
+          <li><i class="bi bi-plus"></i>Contact</li>
+          <li><i class="bi bi-plus"></i>Term & Conditions</li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h4>Departments</h4>
+        <ul>
+          <li><i class="bi bi-plus"></i>Dental Surgery</li>
+          <li><i class="bi bi-plus"></i>General Analysis</li>
+          <li><i class="bi bi-plus"></i>Preventative Care</li>
+          <li><i class="bi bi-plus"></i>Eye Care Solution</li>
+          <li><i class="bi bi-plus"></i>Population Health</li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><i class="bi bi-plus"></i>Primary Care</li>
+          <li><i class="bi bi-plus"></i>Mental Care</li>
+          <li><i class="bi bi-plus"></i>Speciality Care</li>
+          <li><i class="bi bi-plus"></i>Dental Care</li>
+          <li><i class="bi bi-plus"></i>Eye Care</li>
+        </ul>
+      </div>
+
+      <!-- Column 5 -->
+      <div>
+        <h4>Support</h4>
+        <ul>
+          <li><i class="bi bi-plus"></i>Help Center</li>
+          <li><i class="bi bi-plus"></i>FAQs</li>
+          <li><i class="bi bi-plus"></i>Contact Us</li>
+          <li><i class="bi bi-plus"></i>Ticket Support</li>
+          <li><i class="bi bi-plus"></i>Live Chat</li>
+        </ul>
+    </div>
+
+   
+  </footer>
+   <div class="footer-bottom">
+      <p class="p-3">Copyright © 2025 <span style="color:#ff5e5e;">Trikardia</span>. All Rights Reserved.</p>
+   
+ </div>
+
+<!-- script file link -->
+<script src="script.js"></script>
+<!-- aos library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Bootstrap Bundle JS with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

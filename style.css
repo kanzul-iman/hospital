@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#navbar{
+    background-color: rgb(101, 101, 144);
+    height: 80px;
+}
+
+
+.logo-design{
+    width: 100px;
+    box-shadow: 5px 5px 100px;
+    margin-bottom: 0px;
+    color:  rgb(101, 101, 144);
+    padding: 2px 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.logo-design:hover{
+    
+    background-color: rgb(101, 101, 144);
+    border-right: 2px solid white;
+    color: white;
+
+
+}
+.search-box {
+      display: none; /* Hidden by default */
+      margin-left: 20px;
+    }
+
+    .search-box input {
+      padding: 9px;
+      border-radius: 5px;
+      border: none;
+      width: 200px;
+    }
+
+    .search-btn {
+        margin-top: 5px;
+        font-size: 15px;
+   
+      color: black;
+      border: none;
+      padding: 2px 12px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .btn-colors button{
+        background-color: rgb(101, 101, 144);
+        color: white;
+        padding: 7px;
+        font-size: 22px;
+    }
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    font-size: 18px;
+    
+}
+
+/* Make dropdown open on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Optional: remove delay jump */
+  padding: 5px 10px;
+}
+
+.dropdown-menu {
+  transition: all 0.3s ease;
+}
+
+.drop{
+    padding: 5px 10px;
+
+}
+.icon-size{
+    font-size: 24px;
+}
+
+wn-menu {
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.dropdown-item {
+  color: black !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #007bff !important;
+}
+
+.btn-color{
+    background-color: rgb(101,101,144);
+    color: white;
+}
+.new-card-height{
+    height: 200px;
+    padding: 25px;  
+    border-radius: 40px;
+}
+/* product */
+@keyframes colorChanger {
+    0%{
+      background: rgb(101,101,144) ;
+      color: white;
+    }
+    25%{
+        background: rgb(104, 104, 207);
+        color: white;
+    }
+    50%{
+         background: rgb(212, 212, 242);
+         color: black;
+        
+    }
+    75%{
+         background: rgb(33, 33, 65);
+         color: white;
+        
+    }
+    100%{
+         background: rgb(11, 11, 13);
+         color: white;
+        
+    }
+
+}
+
+.color-change{
+    animation: colorChanger 5s 0s infinite;
+
+
+}
+
+.arrow-icon {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateX(-5px);
+}
+
+.btn:hover .arrow-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.transition{
+    transition: transform 0.4s ease;
+    border-radius: 30px;
+    border: 1px solid  rgb(101,101,144) ;
+}
+.transition:hover{
+    transform: scale(1.05);
+    border: 2px solid  rgb(101,101,144) ;
+    opacity: 0.8;
+    border-radius:30px;
+    font-weight: 500;
+}
+
+
+
+.bg-success {
+    background-color: grey !important;
+}
+.rounded{
+    border-radius: 3.25rem !important;
+    margin-bottom: 50px;
+
+    
+}
+.newimg{
+    height: 350px;
+    margin-top: 10px;
+    padding: 10px;
+
+
+}
+.card-body{
+    text-align: center;
+}
+.faq-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.color-button{
+    background-color: rgb(101,101,144) ;
+    color: white;
+}
+
+.ambulance-img {
+    position: fixed;
+    bottom: 0px;
+    right: -200px;
+  height: 50px;          
+  width: auto;             
+  animation: moveLeftRight 10s 0s infinite linear; 
+}
+
+.color-button{
+    position: relative;
+    border-radius: 15px;
+    margin-left: 150px;
+}
+
+
+@keyframes waveEffect {
+    0%{
+        transform: scale(0,0);
+        opacity: 0;
+
+    }
+    50%{
+        transform: scale(1.3,1.3);
+        opacity: 0.5;
+
+
+    }
+    100%{
+        transform: scale(0,0);
+        opacity: 0.5;
+
+
+    }
+    
+}
+/* child */
+.wave{
+    position: absolute;
+    background-color: rgb(101,101,144)  ;
+    border-radius: 15px;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    animation: waveEffect 3s 0s infinite linear;
+}
+
+@keyframes borderColorChange {
+    0%{
+      background: rgb(101,101,144) ;
+      color: white;
+    }
+    25%{
+        background: rgb(104, 104, 207);
+        color: white;
+    }
+    50%{
+         background: rgb(212, 212, 242);
+         color: black;
+        
+    }
+    75%{
+         background: rgb(33, 33, 65);
+         color: white;
+        
+    }
+    100%{
+         background: rgb(11, 11, 13);
+         color: white;
+        
+    }
+
+}
+
+.coloring-animation{
+    animation: borderColorChange 5s 0s infinite;
+
+
+}
+
+.bordercolor {
+  border: 2px solid blue;
+  padding: 20px;
+  animation: borderColorAnim 3s infinite ease-in;
+}
+
+
+@keyframes moveLeftRight {
+  0%{
+   right:-200px
+
+  }
+  100%{
+    right: 120%;
+  }
+  
+}
+ .footer {
+      background: #fff;
+      border-radius: 20px 20px 0 0;
+      padding: 40px 60px;
+      color: #333;
+      max-width: 1600px;
+      margin: auto;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+    }
+
+    .footer .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .footer .desc {
+      margin: 20px 0;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .footer .contact i {
+      margin-right: 10px;
+      color: #ff5e5e;
+    }
+
+    .footer .contact p {
+      margin: 8px 0;
+      font-size: 14px;
+    }
+
+    .footer h4 {
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    /* .footer ul li::before {
+      content: <i class="bi bi-plus"></i>;
+      margin-right: 8px;
+      color: #999;
+    } */
+
+
+    .footer-bottom {
+      text-align: center;
+      font-size: 13px;
+      color: #777;
+      border-top: 1px solid #ddd;
+    }
+
+    .footer-bottom .social i {
+      margin: 0 10px;
+      color: #555;
+      cursor: pointer;
+    }
+
+    .footer-bottom .social i:hover {
+      color: #ff5e5e;
+    }
+    
+
+
+
+@media(max-width: 768px) {
+   .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+   
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+.searching{
+    background-color: rgb(218, 212, 212);
+    color: black;
+    width: 250px;
+    
+}
+.button{
+    background-color: white;
+    color: black;
+
+}
+
+.col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+        margin-bottom: 20px;
+    
+}
+.bg-white{
+   
+    width: -webkit-fill-available;
+}
+
+/* faq */
+ .accordion-button {
+      font-size: 1rem;
+      white-space: normal;
+      text-align: left;
+    }
+
+    .accordion-item {
+      margin-bottom: 1rem;
+    }
+
+    #faq h2,
+    #patient-satisfaction h2 {
+      font-size: 1.5rem;
+    }
+
+    #faq p,
+    #patient-satisfaction p {
+      font-size: 0.95rem;
+    }
+
+    .progress-bar {
+      font-size: 0.8rem;
+    }
+    .color-button{
+    position: relative;
+    border-radius: 15px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+ .footer {
+        padding: 30px 20px;
+        text-align: center;
+      }
+      .footer .logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer .desc {
+    margin: 20px 0;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.footer .contact p {
+    margin: 8px 0;
+    font-size: 18px;
+}
+.footer h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+}
